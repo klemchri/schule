@@ -55,9 +55,8 @@ public class Rechteck {
     public String toString() {
         if (laenge == breite) {
             return "Quadrat mit Seitenlänge = " + laenge + ", Fläche = " + this.flaeche() + " und  Umfang = " + this.umfang();
-        } else {
-            return "Rechteck mit Länge = " + laenge + ", Breite = " + breite + ", Fläche = " + this.flaeche() + " und  Umfang = " + this.umfang();
         }
+        return "Rechteck mit Länge = " + laenge + ", Breite = " + breite + ", Fläche = " + this.flaeche() + " und  Umfang = " + this.umfang();
     }
 
     public Rechteck toQuadratFlaeche() {
@@ -65,8 +64,9 @@ public class Rechteck {
         return new Rechteck(flaeche);
     }
 
-    public String tell_me_more() {
+    public void tell_me_more() {
         System.out.println("This is a Rechteck");
+        
     }
 
 }
