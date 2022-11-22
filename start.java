@@ -20,6 +20,14 @@ public class start {
         System.out.println(quadrat);
 
         r1.tell_me_more();
+
+        System.out.println("Bruch:");
+        Bruch b1 = new Bruch(1, 2);
+        Bruch b2 = new Bruch(3, 4);
+        System.out.println(b1);
+        System.out.println(b2);
+        System.out.println(b1.toDoubleString());
+        
         
     }
 
