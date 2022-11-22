@@ -51,6 +51,16 @@ public class Rechteck {
         return laenge * breite;
     }
 
+    public double berechneFlaeche(double laenge, double breite) { return laenge * breite; }
+
+    public double diagonalenlaenge() {
+        return Math.sqrt(Math.pow(laenge, 2) + Math.pow(breite, 2));
+    }
+
+    public double diagonalenwinkel() {
+        return Math.atan(breite / laenge);
+    }
+
     @Override
     public String toString() {
         if (laenge == breite) {
