@@ -18,6 +18,18 @@ public class Bruch {
         this(1, 1);
     }
 
+    
+    public void print()
+    {
+        System.out.println(this.getZaehler() + "/" + this.getNenner());
+    }
+
+    public void printDecimal(){
+        String ausgabe = (double) zaehler / nenner + "";
+        System.out.println(ausgabe);
+    }
+
+
     public void setZaehler(int zaehler) {
         this.zaehler = zaehler;
     }
@@ -40,6 +52,7 @@ public class Bruch {
         return nenner;
     }
     
+
     @Override
     public String toString() {
         return zaehler + "/" + nenner;
