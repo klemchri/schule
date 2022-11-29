@@ -29,14 +29,12 @@ public class Fraction
 
     public Fraction() 
     {
-        numerator = 0;
-        denominator = 1;
+        this( 0, 1);
     } 
 
     public Fraction( int num )
     {
-        numerator = num;
-        denominator = 1;
+        this( num, 1 );
     }
 
     @Override

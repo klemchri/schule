@@ -1,22 +1,23 @@
 public class start {
 
     public static void main(String[] args) {
-        testFraction();
-        // testBruch();
-        // testRechteck();
-        // testGruss();
-
-        
+        testFraction();     // Eigene Klasse aus der Uni
+        // testBruch();     // Schul-Klasse mit Extra-Methoden
+        // testRechteck();  // Schul-Klasse mit Extra-Methoden
+        // testGruss();     // Schul-Klasse
     }
 
     public static void testFraction(){
         Fraction f1 = new Fraction(1, 2);
         Fraction f2 = new Fraction(1, 3);
+        Fraction f3 = new Fraction(2, 4);
         
         System.out.println(f1);
         System.out.println(f2);
         System.out.println(f1.multiply(f2));
         System.out.println(f1.divideBy(f2));
+
+        System.out.println(f3 + " " + f3.equals(f1));
     }
 
     public static void testBruch(){
