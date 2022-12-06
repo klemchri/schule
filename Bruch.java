@@ -1,24 +1,22 @@
-/**
- * Bruch
- */
 public class Bruch {
     private int zaehler;
     private int nenner;
 
     public Bruch(int zaehler, int nenner) {
-        this.setNenner(nenner);
         this.setZaehler(zaehler);
+        this.setNenner(nenner);
     }
     
     public Bruch(int zaehler) {
-        this(zaehler, 1);
+        this.setZaehler(zaehler);
+        this.nenner = 1;
     }
 
     public Bruch() {
-        this(1, 1);
+        this.nenner = 1;
+        this.zaehler = 0;
     }
 
-    
     public void print()
     {
         System.out.println(this.getZaehler() + "/" + this.getNenner());
@@ -40,7 +38,6 @@ public class Bruch {
         }
         else{
             throw new IllegalArgumentException("Nenner darf nicht 0 sein!");
-
         }
     }
 

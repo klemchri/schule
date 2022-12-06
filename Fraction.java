@@ -127,4 +127,4 @@ public class Fraction
             return value1;
         }
     }
-}
+} //Hab keine ahnung ob das von mir oder von meinem voherigen Prof ist :D
