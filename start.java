@@ -1,10 +1,25 @@
 public class start {
 
     public static void main(String[] args) {
-        testFraction();     // Eigene Klasse aus der Uni
+        testPerson();
+        // testFraction();  // Eigene Klasse aus der Uni
         // testBruch();     // Schul-Klasse mit Extra-Methoden
         // testRechteck();  // Schul-Klasse mit Extra-Methoden
         // testGruss();     // Schul-Klasse
+    }
+
+    public static void testPerson(){
+        Person p1 = new Person("Hans", "Müller", 20);
+        Person p2 = new Person("Hans", "Müller");
+        Person p3 = new Person("Hans");
+        Person p4 = new Person();
+        
+        p1.print();
+        p2.print();
+        p3.print();
+        p4.print();
+
+        Gruss g1 = new Gruss(p1);
     }
 
     public static void testFraction(){

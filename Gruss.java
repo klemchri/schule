@@ -7,6 +7,10 @@ public class Gruss {
         this.begruessen();
     }
 
+    public Gruss(Person p) {
+        this(p.getVorname() + " " + p.getNachname());
+    }
+
     public Gruss() {
         this("ITFM1");
     }
