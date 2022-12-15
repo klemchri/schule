@@ -19,6 +19,11 @@ public class Gruss {
         System.out.println("Hallo " + name + "!");
     }
 
+    @Override
+    public String toString() {
+        return "Hallo " + name + "!";
+    }
+
 }
 
 

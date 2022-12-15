@@ -70,8 +70,8 @@ public class Rechteck {
     }
 
     public Rechteck toQuadratFlaeche() {
-        double flaeche = Math.sqrt(this.flaeche());
-        return new Rechteck(flaeche);
+        double laenge = Math.sqrt(this.flaeche());
+        return new Rechteck(laenge);
     }
 
     public void tell_me_more() {

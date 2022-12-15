@@ -50,6 +50,8 @@ public class Person {
     }
 
     public void print() {
-        System.out.println("Person: " + vorname + " " + nachname + " ist " + alter + " Jahr" + (alter==1?"":"e") + " alt.");
+        String outstr = "Person: %s %s ist %d Jahr%s alt.";
+        outstr = String.format(outstr, vorname, nachname, alter, (alter==1?"":"e"));
+        System.out.println(outstr);
     }
 }

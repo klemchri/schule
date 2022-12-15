@@ -2,13 +2,15 @@ public class start {
 
     public static void main(String[] args) {
         testPerson();
-        // testFraction();  // Eigene Klasse aus der Uni
-        // testBruch();     // Schul-Klasse mit Extra-Methoden
-        // testRechteck();  // Schul-Klasse mit Extra-Methoden
-        // testGruss();     // Schul-Klasse
+        testFraction();  // Eigene Klasse aus der Uni
+        testBruch();     // Schul-Klasse mit Extra-Methoden
+        testRechteck();  // Schul-Klasse mit Extra-Methoden
+        testGruss();     // Schul-Klasse
     }
 
     public static void testPerson(){
+        printTest("Person");
+
         Person p1 = new Person("Hans", "Müller", 20);
         Person p2 = new Person("Hans", "Müller");
         Person p3 = new Person("Hans");
@@ -23,6 +25,8 @@ public class start {
     }
 
     public static void testFraction(){
+        printTest("Fraction");
+
         Fraction f1 = new Fraction(1, 2);
         Fraction f2 = new Fraction(1, 3);
         Fraction f3 = new Fraction(2, 4);
@@ -36,7 +40,8 @@ public class start {
     }
 
     public static void testBruch(){
-        System.out.println("Bruch:");
+        printTest("Bruch");
+
         Bruch b1 = new Bruch(1, 2);
         Bruch b2 = new Bruch(3, 4);
         System.out.println(b1);
@@ -45,6 +50,8 @@ public class start {
     }
 
     public static void testRechteck(){
+        printTest("Rechteck");
+
         System.out.println("Schulrechecke:");
         Rechteck schule1 = new Rechteck();
         Rechteck schule2 = new Rechteck(100);
@@ -59,9 +66,15 @@ public class start {
     }
 
     public static void testGruss(){
+        printTest("Gruss");
+
         Gruss g1 = new Gruss();
         Gruss g2 = new Gruss("Hans");
         System.out.println(g1);
         System.out.println(g2);
+    }
+
+    public static void printTest(String testname){
+        System.out.println("\ntest" + testname + "():");
     }
 }
