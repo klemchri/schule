@@ -13,10 +13,7 @@ public class Kasse {
 
     public void print()
     {   
-        System.out.println("Einnahmen: " + this.einnahmen);
-        System.out.println("Anzahl PKW: " + this.getPKW());
-        System.out.println("Anzahl LKW: " + this.getLKW());
-        System.out.println("Gesamt: " + (this.anzPKW + this.anzLKW));
+        System.out.println(this);
     }
 
     public void starteEingabe(){
@@ -75,14 +72,14 @@ public class Kasse {
             System.out.println("Anzahl darf nicht negativ sein!");
         }
     }
-    
+
     @Override
     public String toString(){
         String out = "";
-        out += "Einnahmen: " + this.einnahmen;
-        out +="Anzahl PKW: " + this.getPKW();
-        out +="Anzahl LKW: " + this.getLKW();
-        out +="Gesamt: " + (this.anzPKW + this.anzLKW);
+        out += "Einnahmen: " + this.einnahmen + "\n";
+        out +="Anzahl PKW: " + this.getPKW() + "\n";
+        out +="Anzahl LKW: " + this.getLKW() + "\n";
+        out +="Gesamt: " + (this.anzPKW + this.anzLKW) + "\n";
         return out;
     }
 
