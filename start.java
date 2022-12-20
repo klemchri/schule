@@ -1,11 +1,20 @@
 public class start {
 
     public static void main(String[] args) {
-        testPerson();
-        testFraction();  // Eigene Klasse aus der Uni
-        testBruch();     // Schul-Klasse mit Extra-Methoden
-        testRechteck();  // Schul-Klasse mit Extra-Methoden
-        testGruss();     // Schul-Klasse
+        testKasse();
+        // testPerson();
+        // testFraction();  // Eigene Klasse aus der Uni
+        // testBruch();     // Schul-Klasse 
+        // testRechteck();  // Schul-Klasse
+        // testGruss();     // Schul-Klasse
+    }
+
+    public static void testKasse(){
+        printTest("Kasse");
+
+        Kasse k1 = new Kasse();
+
+        k1.starteEingabe();
     }
 
     public static void testPerson(){
